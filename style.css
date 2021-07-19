@@ -1,0 +1,303 @@
+@import url('http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+.cancelbtn {
+    width: 100px;
+    padding: 10px;
+    margin: 15px 14px;
+}
+button {
+    display: inline-block;
+    width: 100px;
+    padding: 10px;
+    /* border: 0; */
+    margin-left: 6px;
+    text-decoration: none;
+    border-radius: 15px;
+    background-color: rgba(255,255,255,0.06);
+    border: 1px solid rgba(255,255,255,0.1);
+    backdrop-filter: blur(10px);
+    color: rgba(255,255,255,0.8);
+    font-size: 14px;
+    letter-spacing: 2px;
+    cursor: pointer;
+    text-transform: uppercase;
+  }
+ 
+  button:hover {
+    background-color: rgba(255,255,255,0.2);
+  }
+
+
+
+form {
+
+    display: inline-block;
+    /* padding: 25px; */
+    width: 600px;
+    height: 300px;
+    margin-left: 400px;
+    margin-top: 10px;
+
+}
+
+input[type=text],
+input[type=password] {
+    background-color: white;
+    /* opacity: 0.5; */
+    width: 100%;
+    margin: 8px 5px;
+    padding: 10px 20px;
+    display: inline-block;
+    border: 1px solid green;
+    border-radius: 15px;
+    box-sizing: border-box;
+}
+
+button:hover {
+    opacity: 0.7;
+}
+.section{
+    top:0;
+    left:0;
+}
+.container1 {
+    margin-left: 140px;
+    background-color: rgba(255,255,255,0.06);
+    border: 1px solid rgba(255,255,255,0.1);
+    width: 15rem;
+    height: 13rem;
+    border-radius: 15px;
+    padding: 32px;
+    backdrop-filter: blur(10px);
+  }
+  input.watermark{
+      color: black;
+      font-weight: bolder;
+  }
+  input.placeholder{
+    color: black;
+    font-weight: bolder;
+}
+
+
+
+.container {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    overflow: auto;
+}
+
+.container .section {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-blend-mode: multiply;
+}
+
+.container .section:nth-child(1) {
+    background: url(./img/river.jpg);
+    /* opacity: 0.9; */
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.container .section:nth-child(2) {
+    background: url(./img/taj.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.container .section:nth-child(3) {
+    background: url(./img/beach.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.container .section:nth-child(4) {
+    background: url(./img/victoria.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.container .section:nth-child(5) {
+    background: url(./img/kerela.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+.container .section:nth-child(6) {
+    background: url(./img/mysore.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+.container .section:nth-child(7) {
+    background: url(./img/thankyou.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+.container .section:nth-child(7) {
+    background: url(./img/jal.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+.container .section .welcome h1{
+    font-size: 7rem;
+    font-family: 'Zen Loop', cursive;
+    /* padding-top: 200px; */
+    color: black;
+    /* background-color: blue; */
+}
+.container .section .welcome h3{
+    font-size: 2rem;
+    font-family: 'Poppins', sans-serif;
+    /* padding-top: 3px;
+    padding-left: 150px; */
+    color: black;
+    /* background-color: blue; */
+}
+
+.welcome {
+    margin-left: 370px;
+    
+    display: flex;
+    place-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(255,255,255,0.06);
+    border: 1px solid rgba(255,255,255,0.1);
+    width: 40rem;
+    height: 15rem;
+    border-radius: 15px;
+    /* padding: 10px; */
+    backdrop-filter: blur(8px);
+  }
+
+.container .section .content {
+    position: absolute;
+    bottom: 50px;
+    left: 50px;
+    top: 90px;
+    max-width: 700px;
+}
+.content {
+    width: 25rem;
+    height: 12rem;
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2);
+    border-radius: 10px;
+    position: relative;
+    z-index: 1;
+    background: inherit;
+    overflow: hidden;
+}
+
+.content:before {
+    content: "";
+    position: absolute;
+    background: inherit;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    box-shadow: inset 0 0 2000px rgba(255, 255, 255, .5);
+    filter: blur(10px);
+    margin: -20px;
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    padding-top: 8px;
+}
+
+p {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    padding-top: 20px;
+}
+
+
+/* The typing effect */
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+    to {
+        width: 100%
+    }
+}
+
+.container .section .foot p {
+    position: relative;
+    margin-top: 500px;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-size: 2rem;
+}
+.container .section h3 {
+    color: rgb(255, 255, 255);
+    font-size: 1.5rem;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    overflow: hidden;
+    /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange;
+    /* The typwriter cursor */
+    white-space: nowrap;
+    /* Keeps the content on a single line */
+    margin: 0 auto;
+    /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em;
+    /* Adjust as needed */
+    animation: typing 8s steps(400, end), blink-caret 1s step-end infinite;
+}
+
+.foot {
+    color: rgb(255, 255, 255);
+    font-size: 1.5rem;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    overflow: hidden;
+    /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange;
+    /* The typwriter cursor */
+    white-space: nowrap;
+    /* Keeps the content on a single line */
+    margin: 0 auto;
+    /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em;
+    /* Adjust as needed */
+    animation: typing 8s steps(400, end), blink-caret 1s step-end infinite;
+}
+
+
+/* The typewriter cursor effect */
+
+@keyframes blink-caret {
+    from,
+    to {
+        border-color: transparent
+    }
+    50% {
+        border-color: transparent;
+    }
+}
+footer{
+    background-color: black;
+    color : white;
+}
+footer p{
+    background-color: black;
+    color : white;
+}
+#text{
+    color: white;
+    font-family: 'Zen Loop', cursive;
+    padding : 30px;
+    font-size: 2rem;
+}
